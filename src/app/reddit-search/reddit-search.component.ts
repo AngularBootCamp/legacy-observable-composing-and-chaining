@@ -4,8 +4,8 @@ import { FormControl } from '@angular/forms';
 import { Observable } from 'rxjs/Observable';
 
 import 'rxjs/add/observable/combineLatest';
-import 'rxjs/add/observable/of';
 import 'rxjs/add/observable/merge';
+import 'rxjs/add/observable/of';
 import 'rxjs/add/operator/debounceTime';
 import 'rxjs/add/operator/distinctUntilChanged';
 import 'rxjs/add/operator/do';
