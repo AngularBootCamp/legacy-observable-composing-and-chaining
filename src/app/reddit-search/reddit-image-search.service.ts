@@ -1,10 +1,9 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { flatMap } from 'lodash-es';
-// tslint:disable-next-line:import-blacklist
+// tslint:disable:import-blacklist
+// tslint:disable:ordered-imports
 import { Observable } from 'rxjs/Observable';
-
-// tslint:disable-next-line:import-blacklist
 import 'rxjs/add/operator/map';
 
 @Injectable({

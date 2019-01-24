@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 import { FormControl } from '@angular/forms';
 // tslint:disable:import-blacklist
+// tslint:disable:ordered-imports
+// add the various operators
 import { Observable } from 'rxjs/Observable';
-
 import 'rxjs/add/observable/combineLatest';
 import 'rxjs/add/observable/merge';
 import 'rxjs/add/observable/of';
