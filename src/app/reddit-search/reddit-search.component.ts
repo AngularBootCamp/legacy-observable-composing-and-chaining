@@ -16,7 +16,10 @@ import 'rxjs/add/operator/retry';
 import 'rxjs/add/operator/startWith';
 import 'rxjs/add/operator/switchMap';
 
-import { RedditImageSearchService } from './reddit-image-search.service';
+import {
+  RedditImageSearchService,
+  RedditResult
+} from './reddit-image-search.service';
 
 @Component({
   selector: 'reddit-search',
@@ -25,7 +28,7 @@ import { RedditImageSearchService } from './reddit-image-search.service';
 export class RedditSearchComponent {
   subReddit = new FormControl('aww');
   search = new FormControl('');
-  results: Observable<string[]>;
+  results: Observable<RedditResult[]>;
 
   constructor(ris: RedditImageSearchService) {
     const validSubReddit$ = this.subReddit.valueChanges
