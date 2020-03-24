@@ -38,10 +38,10 @@ function translateRedditResults(items: any): RedditResult[] {
     items.data.children,
     (item: { [key: string]: any }): RedditResult[] => {
       if (item) {
-        const data = item['data'];
-        if (data) {
-          const thumbnail = data['thumbnail'];
-          const title = data['title'];
+        const redditPost = item['data'];
+        if (redditPost) {
+          const thumbnail = redditPost['thumbnail'];
+          const title = redditPost['title'];
           if (thumbnail.startsWith('http')) {
             return [{ thumbnail, title }];
           }
